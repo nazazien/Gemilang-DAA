@@ -4,3 +4,4 @@ streamlit
 pip==24.3.1
 Pillow
 streamlit-option-menu
+openpyxl
