@@ -37,7 +37,10 @@ if page == "Home":
     st.title(':rainbow[HOW MUCH IS MY CAR COST?]')
     st.write(':grey[Friday, 08 November 2023. By [gemilang.com](http://localhost:8501/%F0%9F%91%A5%20About%20Us)]')    
     
-    st.video("https://drive.google.com/file/d/1q9UZJEBvgtLKzb6MjUflWgkL1P-RP8v_/view?usp=sharing")
+    video_file = open("Documents/video/profilnew.mp4", "rb")
+    video_bytes = video_file.read()    
+    st.video(video_bytes)
+    
     st.subheader('Find Your Car Price')
     col1,col2 = st.columns([2,2])
     with col1:        
