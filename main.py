@@ -26,7 +26,7 @@ if page == "Home":
     col1,col2,col3 = st.columns([2,0.1,4])
     with col1: 
         st.write(' ')
-        st.image(Image.open('Documents/image/g2.png'),width=200)
+        st.image(Image.open('Documents\video\profilnew.mp4'),width=200)
     with col2:
         st.header('| ')
     with col3:
