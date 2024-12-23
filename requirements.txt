@@ -6,5 +6,4 @@ Pillow
 streamlit-option-menu
 openpyxl
 datetime
-os
 base64
