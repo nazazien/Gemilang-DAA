@@ -26,7 +26,7 @@ if page == "Home":
     col1,col2,col3 = st.columns([2,0.1,4])
     with col1: 
         st.write(' ')
-        st.image(Image.open('Documents\video\profilnew.mp4'),width=200)
+        st.image(Image.open('Documents/image/g2.png'),width=200)
     with col2:
         st.header('| ')
     with col3:
@@ -37,13 +37,13 @@ if page == "Home":
     st.title(':rainbow[HOW MUCH IS MY CAR COST?]')
     st.write(':grey[Friday, 08 November 2023. By [gemilang.com](http://localhost:8501/%F0%9F%91%A5%20About%20Us)]')    
     
-    st.image(Image.open('Documents/image/top.png'), width=700, caption='Source: https://storyset.com/')
+    st.video("Documents\video\profilnew.mp4")
     st.subheader('Find Your Car Price')
     col1,col2 = st.columns([2,2])
     with col1:        
         st.write('Gemilang, our application is for those of you who are confused about determining the selling price of a used TOYOTA car quickly and accurately. Check the estimated price of your car carefully before selling your car')
 
-    with col2:
+    with col2:        
         st.image(Image.open('Documents/image/left.png'), width=350)        
     
     st.subheader('Promoting Your Used Car')    
