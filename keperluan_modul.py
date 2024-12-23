@@ -29,7 +29,7 @@ def bg():
     background-position: center;
     }}
 
-    [data-testid="stSidebar"] > div:first-child {{
+    [data-testid="stSidebarContent"] > div:first-child {{
     background-image: url("data:image/png;base64,{img2}");
     background-size: cover;
     background-position: center;         
