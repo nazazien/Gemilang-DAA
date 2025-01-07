@@ -35,7 +35,14 @@ def bg():
     background-position: center;         
     }}       
 
-    
+    [data-testid="stHeader"] {{
+    background: rgba(0,0,0,0);
+    }}
+
+    [data-testid="stToolbar"] {{
+    right: 2rem;
+    }}
+
     </style>
     """
     
