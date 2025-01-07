@@ -76,16 +76,18 @@ elif page == "Price Estimation":
         return lower_part, upper_part
     
     def bobot(X, Y, regularization_strength):
-        X_T = matriks.transpose(X)
-        X_T_X = matriks.matrix_multiplication(X_T, X)
-        X_T_Y = matriks.matrix_multiplication(X_T, [[y] for y in Y])
+        X_T = matriks.transpose(X) #kompleksitas 𝑂( 𝑛 ⋅ 𝑝 ), di mana: 𝑛 jumlah data & 𝑝 jumlah fitur
+        X_T_X = matriks.matrix_multiplication(X_T, X) #𝑂( 𝑛 ⋅ 𝑝^2)
+        X_T_Y = matriks.matrix_multiplication(X_T, [[y] for y in Y]) #𝑂( 𝑛 ⋅ 𝑝 )
 
         for i in range(len(X_T_X)):
             X_T_X[i][i] += regularization_strength
 
-        X_T_X_inv = matriks.matrix_inverse(X_T_X)
-        W = matriks.matrix_multiplication(X_T_X_inv, X_T_Y)
-        return [w[0] for w in W]
+        X_T_X_inv = matriks.matrix_inverse(X_T_X) #𝑂( 𝑝^3 )
+        W = matriks.matrix_multiplication(X_T_X_inv, X_T_Y) #𝑂( 𝑝^3 )
+        return [w[0] for w in W]    
+    #kompleksitas waktu total: 𝑂( 𝑛 ⋅ 𝑝^2 + 𝑝^3 )
+    #kompleksitas ruang: 𝑂( 𝑝^2 ), untuk menyimpan matriks 𝑋_𝑇 ⋅ 𝑋 dan hasil inversinya
     
     def prediksi(features, weights):
         return sum(f * w for f, w in zip(features, weights))
