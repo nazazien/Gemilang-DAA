@@ -248,8 +248,8 @@ Increase our knowledge through practical experience.''')
     with col2:
         st.image(Image.open('Documents/image/salwa.jpeg'), width=150)
         st.markdown('''Salwa Nadhifah Az Zahrah
-                    23031554135
-                    salwa.23040@mhs.unesa.ac.id''')
+                    23031554136
+                    salwa.23136@mhs.unesa.ac.id''')
 
     with col3:
         st.image(Image.open('Documents/image/salsa.jpg'), width=150)
