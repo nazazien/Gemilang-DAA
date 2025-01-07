@@ -35,7 +35,7 @@ def bg():
     background-position: center;         
     }}       
 
-    [data-testid="stHeader"] {{
+    [data-testid="stAppHeader"] {{
     background: rgba(0,0,0,0);
     }}
 
