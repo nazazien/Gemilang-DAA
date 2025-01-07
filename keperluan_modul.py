@@ -33,15 +33,9 @@ def bg():
     background-image: url("data:image/png;base64,{img2}");
     background-size: cover;
     background-position: center;         
-    }}    
+    }}       
 
-    # [data-testid="stHeader"] {{
-    # background: rgba(0,0,0,0);
-    # }}
-
-    [data-testid="stToolbar"] {{
-    right: 2rem;
-    }}
+    
     </style>
     """
     
